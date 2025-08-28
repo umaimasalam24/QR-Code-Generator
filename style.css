@@ -1,0 +1,91 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Box container */
+.box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  width: 350px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+.box h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f8f8f8;
+  letter-spacing: 1px;
+}
+
+/* Input field */
+.box input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.box input::placeholder {
+  color: #ddd;
+}
+
+/* Button */
+.box button {
+  background: #00c6ff;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 114, 255, 0.4);
+}
+
+/* QR Code Display */
+#qrBox {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
